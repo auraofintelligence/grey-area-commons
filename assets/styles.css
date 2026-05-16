@@ -460,6 +460,16 @@ p {
   color: #7a5600;
 }
 
+.boundary-note.tender {
+  background: #fff7f0;
+  border-color: #efc9b5;
+  border-left-color: #c86f53;
+}
+
+.boundary-note.tender strong {
+  color: #8d412c;
+}
+
 .builder-form {
   display: grid;
   gap: 1rem;

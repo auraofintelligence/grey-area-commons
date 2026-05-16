@@ -171,96 +171,114 @@
       ]
     },
     clinicalPathway: {
-      title: "Clinical Care Branch",
-      schema: "grey_area_commons.dementia_clinical_pathway.v0",
-      filename: "dementia-clinical-pathway.md",
-      intro: "A related care branch for dementia, memory change and vulnerability. It keeps loving connection gentle by making consent capacity, carers, clinicians and privacy explicit.",
+      title: "Memory, Love and Intimacy",
+      schema: "grey_area_commons.memory_intimacy_pathway.v1",
+      filename: "memory-intimacy-pathway.md",
+      intro: "A softer grey-area path for adults navigating dementia onset, family history, diagnosis, care or recovery hope. It keeps love, tenderness, attraction, privacy and changing consent visible before anything is shared.",
       sections: [
         {
-          title: "Care Boundary",
+          title: "Heart Before Health",
           fields: [
             {
               type: "singleCheck",
-              name: "not_medical_advice_confirmed",
-              label: "I understand this draft is not medical advice, diagnosis, treatment, or emergency guidance.",
-              markdownLabel: "Clinical-use boundary"
+              name: "adult_legal_consent_boundary",
+              label: "I understand this draft is for adult, legal, consent-led connection and must not be used to pressure, bypass or expose anyone.",
+              markdownLabel: "Adult and consent boundary"
+            },
+            {
+              type: "singleCheck",
+              name: "not_advice_confirmed",
+              label: "I understand this is not medical, legal, sexual-consent, safeguarding, diagnosis, treatment or emergency advice.",
+              markdownLabel: "Care-use boundary"
             },
             {
               type: "checkboxes",
               name: "pathway_stage",
-              label: "Where might this care branch sit?",
+              label: "Where does this memory-and-love question sit?",
               options: [
+                ["family_history", "Family history or future-self planning"],
                 ["early_questions", "Early questions or unusual changes"],
                 ["onset_monitoring", "Onset monitoring and GP conversation prep"],
-                ["diagnosis_support", "After diagnosis support planning"],
-                ["daily_management", "Daily management and routines"],
-                ["carer_support", "Carer support and burden tracking"],
-                ["reablement", "Reablement or restorative support goals"],
-                ["research_readiness", "Research, HREC or pilot readiness"]
+                ["after_diagnosis", "After diagnosis"],
+                ["daily_care", "Daily care, routines and relationship changes"],
+                ["reablement", "Recovery hope, reablement or confidence rebuilding"],
+                ["grief_and_transition", "Grief, transition or changed intimacy"]
               ]
             },
-            { type: "text", name: "clinical_owner", label: "Who should review this with care?", hint: "GP, geriatrician, neurologist, memory clinic, allied health, research lead, carer coordinator, trusted family, or not sure." },
-            { type: "textarea", name: "urgent_boundaries", label: "What should never be left to AI?", hint: "Triggers for immediate human help, emergency services, a GP call, a carer check, or a safety plan." }
+            { type: "textarea", name: "less_anxious_love", label: "What would make loving connection feel less anxious right now?", hint: "Slower questions, clearer no, permission before touch, less family pressure, more privacy, more humour, more time, or a trusted person nearby." },
+            { type: "textarea", name: "private_longing", label: "What longing, fear or tenderness needs careful words?", hint: "Missing closeness, fear of decline, attraction, loneliness, grief, body changes, future self, old promises, new boundaries, or not knowing how to ask." }
           ]
         },
         {
-          title: "Personhood Before Symptoms",
+          title: "Intimacy That Can Stay Kind",
           fields: [
-            { type: "textarea", name: "life_story", label: "What helps this person feel like themselves?", hint: "People, places, songs, routines, values, roles, language, culture, spiritual anchors, humour, work, family, and familiar beauty." },
-            { type: "textarea", name: "preferences", label: "How do they like care to feel?", hint: "How they like to be spoken to, comforted, supported, prompted, dressed, fed, included, touched, or left alone." },
-            { type: "textarea", name: "strengths", label: "What strengths are still alive?", hint: "What the person can still do, enjoys doing, or may recover confidence with when supported well." },
-            { type: "textarea", name: "diversity_context", label: "What context needs extra respect?", hint: "Language, culture, sexuality, gender, disability, isolation, poverty, younger onset, trauma, care preferences, or social vulnerability." }
+            { type: "textarea", name: "wanted_closeness", label: "What kinds of closeness still feel welcome, possible or worth asking about?", hint: "Companionship, flirting, romance, cuddling, holding hands, shared bed, dance, beauty, spiritual closeness, creative play, or simply being nearby." },
+            { type: "textarea", name: "touch_and_body", label: "How should touch, body comfort and personal space be asked about gently?", hint: "Permission words, signs of comfort, signs of distress, private body boundaries, bathing or dressing dignity, affectionate touch, and how to pause without shame." },
+            { type: "textarea", name: "identity_attraction", label: "What identity, sexuality or relationship context needs respect?", hint: "Orientation, gender, culture, faith, relationship style, grief, disability, trauma, marriage, chosen family, privacy, or late-life discovery." },
+            { type: "textarea", name: "slow_or_stop", label: "What should slow down, pause or stop if confusion, pressure or distress appears?", hint: "Any touch, disclosure, money decision, travel, public post, private meeting, romantic step, AI suggestion, or family intervention that no longer feels freely chosen." }
           ]
         },
         {
-          title: "Gentle Observation Map",
+          title: "Family History and Future Self",
           fields: [
-            { type: "textarea", name: "changes_noticed", label: "What changes are people noticing?", hint: "Memory, confusion, time/place, speech, writing, sleep, personality, daily tasks, mood, decisions, falls, medication, eating, or behaviour." },
-            { type: "textarea", name: "routine_function", label: "Where is daily life getting harder or easier?", hint: "Cooking, phone use, money, hygiene, dressing, travel, appointments, shopping, household tasks, technology, sleep and safety." },
-            { type: "textarea", name: "behaviour_triggers", label: "What distress patterns need compassion?", hint: "Agitation, apathy, anxiety, depression, wandering, repeated questions, delusions, hallucinations, loneliness, pain, noise, fatigue, hunger or environment." },
-            { type: "textarea", name: "what_helps", label: "What non-drug supports seem to help?", hint: "Music, reminiscence, calm voice, familiar object, walk, hydration, food, light, touch permission, quiet space, routine, family call, or clinician-approved strategy." }
+            { type: "textarea", name: "family_history_context", label: "How does family history shape hope, fear or timing?", hint: "Patterns seen in parents, grandparents or siblings, what you want to do differently, what scares you, what gives hope, and what should not be assumed." },
+            { type: "textarea", name: "future_wishes", label: "What would your future self want people to remember about love and dignity?", hint: "How to speak to you, touch you, include you, protect privacy, honour relationships, avoid infantilising you, and keep joy in the room." },
+            { type: "textarea", name: "disclosure_choices", label: "Who knows about the risk, and who does not need to know yet?", hint: "Partner, dates, family, carers, GP, friends, workplace, community, online circles, AI tools, public noticeboards, or nobody yet." },
+            { type: "textarea", name: "ordinary_joy", label: "What ordinary joys should stay in the picture?", hint: "Music, food, beauty, humour, touch with permission, nature, sexiness, prayer, stories, gardening, dancing, games, art, travel, work, rituals or rest." }
           ]
         },
         {
-          title: "Consent, Capacity and Sharing",
+          title: "Consent Over Time",
           fields: [
             {
               type: "checkboxes",
               name: "consent_needs",
-              label: "What consent checks would make this safer?",
+              label: "What consent checks would make intimacy and care safer?",
               options: [
-                ["person_current_wishes", "Current wishes of the person"],
-                ["capacity_review", "Capacity review for this decision"],
+                ["person_current_wishes", "Current wishes, asked gently and more than once"],
+                ["decision_specific_capacity", "Capacity considered for this specific decision"],
+                ["repeat_without_pressure", "Repeat, slow down or stop without pressure"],
+                ["trusted_person_can_slow", "Trusted person can slow the process"],
                 ["substitute_decision_maker", "Substitute decision-maker or EPOA check"],
                 ["carer_separate_needs", "Carer support needs considered separately"],
-                ["clinician_review", "Clinician review before action"],
-                ["ethics_review", "Research ethics review if used in a study"],
-                ["privacy_review", "Privacy and data-sharing review"]
+                ["clinician_or_legal_review", "Clinician or legal review where needed"],
+                ["privacy_review", "Privacy and data-sharing review"],
+                ["never_publicly_ask", "Never ask or imply this publicly"]
               ]
             },
             {
               type: "select",
-              name: "default_clinical_visibility",
-              label: "Default sharing layer for this care file",
+              name: "default_intimacy_visibility",
+              label: "Default sharing layer for this intimacy file",
               options: [
                 ["private", "Private"],
-                ["trusted_only", "Trusted-only"],
-                ["clinical_team_only", "Clinical team only"],
-                ["research_deidentified", "Research de-identified only"],
+                ["trusted_only", "Trusted person only"],
+                ["care_circle_only", "Care circle only"],
+                ["clinical_team_only", "Clinician or support team only"],
+                ["research_deidentified", "De-identified research only"],
                 ["never_publish", "Never publish"]
               ]
             },
-            { type: "textarea", name: "who_can_see", label: "Who may see which parts?", hint: "Separate person, carer, family, clinician, support worker, researcher, AI assistant, and public layers." },
-            { type: "textarea", name: "never_share", label: "What would feel like a betrayal if shared?", hint: "Private health details, identity clues, exact location, distress events, family conflict, financial/legal information, or anything the person would not want exposed." }
+            { type: "textarea", name: "who_can_see", label: "Who may see which parts?", hint: "Separate self, partner, date, spouse, carer, family, clinician, counsellor, support worker, researcher, AI assistant and public layers." },
+            { type: "textarea", name: "never_share", label: "What would feel like a betrayal if shared?", hint: "Diagnosis, risk, desire, identity, private health details, exact location, distress events, family conflict, money/legal details, or anything intimate that was offered in trust." }
           ]
         },
         {
-          title: "Research and Governance Questions",
+          title: "Care Circle Without Taking Over",
           fields: [
-            { type: "textarea", name: "validated_tools", label: "What should clinicians or researchers measure properly?", hint: "Cognitive assessment, quality of life, carer burden, daily function, mood, anxiety, BPSD or usability measures." },
-            { type: "textarea", name: "data_governance", label: "What data questions need answering?", hint: "Where data lives, who controls access, de-identification, audit trail, retention, deletion, cybersecurity, and Australian privacy obligations." },
-            { type: "textarea", name: "tga_samd_boundary", label: "Where is the software medical-device boundary?", hint: "If software monitors, analyses or recommends for a medical purpose, this needs proper regulatory review before public supply." },
-            { type: "textarea", name: "open_questions", label: "What questions belong with GP, clinician, ethics committee or research team?", hint: "What needs a human answer before any AI, app, trial, support plan or public claim proceeds?" }
+            { type: "textarea", name: "support_people", label: "Who helps without taking over?", hint: "Partner, chosen family, adult children, friend, GP, counsellor, elder, carer, support worker, advocate, community host or nobody yet." },
+            { type: "textarea", name: "human_review", label: "Who should be involved before any serious change?", hint: "A trusted adult, clinician, legal decision-maker, counsellor, safeguarding service, ethics committee or the person themselves after more time." },
+            { type: "textarea", name: "what_helps", label: "What helps this person return to themselves?", hint: "Music, humour, familiar beauty, a walk, quiet, food, hydration, prayer, gentle touch with permission, routine, photo, voice, place, pet, or person." },
+            { type: "textarea", name: "not_symptoms", label: "What should not be reduced to symptoms?", hint: "Desire, grief, flirtation, spirituality, playfulness, stubbornness, cultural expression, old wounds, sexuality, love, loneliness or a need for beauty." }
+          ]
+        },
+        {
+          title: "Human Guardrails",
+          fields: [
+            { type: "textarea", name: "urgent_boundaries", label: "What must always go to a human immediately?", hint: "Safety risk, coercion, abuse, exploitation, distress, medical concern, legal decision, financial pressure, emergency, or any intimacy that feels uncertain." },
+            { type: "textarea", name: "ai_boundary", label: "What should AI only help word, sort or remember, never decide?", hint: "Consent, diagnosis, treatment, capacity, legal authority, romantic permission, sexual choices, public exposure, money, safety or who gets access." },
+            { type: "textarea", name: "professional_questions", label: "What questions belong with a GP, clinician, counsellor, lawyer or safeguarding service?", hint: "Medical changes, diagnosis, medication, capacity, substitute decision-making, abuse risk, privacy law, care plans, sexuality and consent support, or research ethics." },
+            { type: "textarea", name: "public_boundary", label: "What could be said publicly, if anything, without exposing diagnosis, longing or family vulnerability?", hint: "A general invitation, listening circle, arts night, care table or community question that does not reveal private health, relationship or intimacy context." }
           ]
         }
       ]
