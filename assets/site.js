@@ -181,7 +181,7 @@
           fields: [
             { type: "textarea", name: "why_here", label: "What am I trying to understand about connection right now?", hint: "Only what feels true today. This might be closeness, distance, attraction, trust, memory worries, family history, care, partnership, dating, or having no clear words yet." },
             { type: "textarea", name: "answering_context", label: "What would help me answer without feeling watched, judged or rushed?", hint: "Privacy, time, simpler words, humour, quiet, a trusted person, no helper, taking breaks, or leaving hard parts blank." },
-            { type: "textarea", name: "trusted_support_optional", label: "If someone is helping, what do I want their role to be?", hint: "They might listen, write my words, slow things down, notice confusion, hold the page, leave me alone, or not be involved at all." }
+            { type: "textarea", name: "trusted_support_optional", label: "If someone is helping, what do I want their role to be?", hint: "They might sit with me, help me read the questions, type exactly what I say, remind me I can skip anything, or step away when I want privacy." }
           ]
         },
         {
