@@ -16,7 +16,7 @@ It follows the existing local builder pattern:
 - `connections.html` - loving connection questions.
 - `permissions.html` - sharing layers.
 - `higher-minds.html` - gentle AI support.
-- `clinical-pathway.html` - optional memory, love and intimacy branch for dementia, family history of memory-related decline, consent and changing capacity.
+- `clinical-pathway.html` - optional memory, love and intimacy self-reflection branch for family history of memory-related decline, consent, privacy and changing capacity.
 - `noticeboards.html` - public bridge after private context is protected.
 - `export.html` - save Markdown pack.
 

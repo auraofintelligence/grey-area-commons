@@ -172,113 +172,60 @@
     },
     clinicalPathway: {
       title: "Memory, Love and Intimacy",
-      schema: "grey_area_commons.memory_intimacy_pathway.v1",
+      schema: "grey_area_commons.memory_intimacy_pathway.v2",
       filename: "memory-intimacy-pathway.md",
-      intro: "A softer grey-area path for adults navigating dementia onset, family history of memory-related decline, diagnosis, care or recovery hope. It keeps love, tenderness, attraction, privacy and changing consent visible before anything is shared.",
+      intro: "A softer self-reflection path for adults exploring loving connection while memory questions, dementia concerns, family history of memory-related decline, care or changing capacity may be somewhere in the background. It does not assume diagnosis, relationship status or support needs.",
       sections: [
         {
-          title: "Heart Before Health",
+          title: "Quiet Starting Point",
           fields: [
-            {
-              type: "singleCheck",
-              name: "adult_legal_consent_boundary",
-              label: "I understand this draft is for adult, legal, consent-led connection and must not be used to pressure, bypass or expose anyone.",
-              markdownLabel: "Adult and consent boundary"
-            },
-            {
-              type: "singleCheck",
-              name: "not_advice_confirmed",
-              label: "I understand this is not medical, legal, sexual-consent, safeguarding, diagnosis, treatment or emergency advice.",
-              markdownLabel: "Care-use boundary"
-            },
-            {
-              type: "checkboxes",
-              name: "pathway_stage",
-              label: "Where does this memory-and-love question sit?",
-              options: [
-                ["family_history", "Family history or future-self planning"],
-                ["early_questions", "Early questions or unusual changes"],
-                ["onset_monitoring", "Onset monitoring and GP conversation prep"],
-                ["after_diagnosis", "After diagnosis"],
-                ["daily_care", "Daily care, routines and relationship changes"],
-                ["reablement", "Recovery hope, reablement or confidence rebuilding"],
-                ["grief_and_transition", "Grief, transition or changed intimacy"]
-              ]
-            },
-            { type: "textarea", name: "less_anxious_love", label: "What would make loving connection feel less anxious right now?", hint: "Slower questions, clearer no, permission before touch, less family pressure, more privacy, more humour, more time, or a trusted person nearby." },
-            { type: "textarea", name: "private_longing", label: "What longing, fear or tenderness needs careful words?", hint: "Missing closeness, fear of decline, attraction, loneliness, grief, body changes, future self, old promises, new boundaries, or not knowing how to ask." }
+            { type: "textarea", name: "why_here", label: "What am I trying to understand about connection right now?", hint: "Only what feels true today. This might be closeness, distance, attraction, trust, memory worries, family history, care, partnership, dating, or having no clear words yet." },
+            { type: "textarea", name: "answering_context", label: "What would help me answer without feeling watched, judged or rushed?", hint: "Privacy, time, simpler words, humour, quiet, a trusted person, no helper, taking breaks, or leaving hard parts blank." },
+            { type: "textarea", name: "trusted_support_optional", label: "If someone is helping, what do I want their role to be?", hint: "They might listen, write my words, slow things down, notice confusion, hold the page, leave me alone, or not be involved at all." }
           ]
         },
         {
-          title: "Intimacy That Can Stay Kind",
+          title: "Preferences For Connection",
           fields: [
-            { type: "textarea", name: "wanted_closeness", label: "What kinds of closeness still feel welcome, possible or worth asking about?", hint: "Companionship, flirting, romance, cuddling, holding hands, shared bed, dance, beauty, spiritual closeness, creative play, or simply being nearby." },
-            { type: "textarea", name: "touch_and_body", label: "How should touch, body comfort and personal space be asked about gently?", hint: "Permission words, signs of comfort, signs of distress, private body boundaries, bathing or dressing dignity, affectionate touch, and how to pause without shame." },
-            { type: "textarea", name: "identity_attraction", label: "What identity, sexuality or relationship context needs respect?", hint: "Orientation, gender, culture, faith, relationship style, grief, disability, trauma, marriage, chosen family, privacy, or late-life discovery." },
-            { type: "textarea", name: "slow_or_stop", label: "What should slow down, pause or stop if confusion, pressure or distress appears?", hint: "Any touch, disclosure, money decision, travel, public post, private meeting, romantic step, AI suggestion, or family intervention that no longer feels freely chosen." }
+            { type: "textarea", name: "wanted_connection", label: "What kinds of connection feel nourishing, possible or worth wondering about?", hint: "Companionship, friendship, romance, flirting, sensuality, cuddling, shared silence, humour, spiritual closeness, creative play, practical care, or simply being near someone." },
+            { type: "textarea", name: "not_wanted_or_not_clear", label: "What feels unwanted, unclear, too fast or not for now?", hint: "Touch, disclosure, pressure to decide, family involvement, public labels, private meetings, sex, dating, caregiving, AI interpretation, or anything that needs more time." },
+            { type: "textarea", name: "asking_consent", label: "How do I like consent, comfort or willingness to be checked?", hint: "Specific words, yes/no/maybe options, gentle repetition, written notes, body cues, asking later, asking privately, or a trusted person helping slow the moment." },
+            { type: "textarea", name: "safe_no", label: "What helps a no, maybe, later or I do not know feel respected?", hint: "No persuasion, no sulking, no public embarrassment, a graceful pause, changing topic, staying kind, or ending the conversation cleanly." }
           ]
         },
         {
-          title: "Family History and Future Self",
+          title: "Memory, Change and Family Story",
           fields: [
-            { type: "textarea", name: "family_history_context", label: "How does family history of memory-related decline shape hope, fear or timing?", hint: "Patterns seen in parents, grandparents or siblings, what you want to do differently, what scares you, what gives hope, and what should not be assumed." },
-            { type: "textarea", name: "future_wishes", label: "What would your future self want people to remember about love and dignity?", hint: "How to speak to you, touch you, include you, protect privacy, honour relationships, avoid infantilising you, and keep joy in the room." },
-            { type: "textarea", name: "disclosure_choices", label: "Who knows about the risk, and who does not need to know yet?", hint: "Partner, dates, family, carers, GP, friends, workplace, community, online circles, AI tools, public noticeboards, or nobody yet." },
-            { type: "textarea", name: "ordinary_joy", label: "What ordinary joys should stay in the picture?", hint: "Music, food, beauty, humour, touch with permission, nature, sexiness, prayer, stories, gardening, dancing, games, art, travel, work, rituals or rest." }
+            { type: "textarea", name: "memory_context", label: "If memory-related change is part of my life or family story, what do I want held gently?", hint: "A family pattern, a personal worry, a diagnosis, no diagnosis, uncertainty, grief, hope, recovery, fear of being assumed about, or nothing that needs naming yet." },
+            { type: "textarea", name: "still_me", label: "What do I want people to remember is still me?", hint: "Humour, sexuality, faith, culture, stubbornness, tenderness, beauty, privacy, playfulness, intelligence, grief, desire, ordinary preferences, or changing needs." },
+            { type: "textarea", name: "future_self", label: "What would future me want protected if memory or confidence changed?", hint: "Dignity, privacy, slow consent, not being infantilised, not being rushed, not being exposed, chosen relationships, body boundaries, joy, and the right to pause." },
+            { type: "textarea", name: "signals_for_support", label: "What signs might mean I need more time, simpler words or trusted support?", hint: "Confusion, distress, people disagreeing, feeling pressured, forgetting a choice, not recognising context, fatigue, fear, silence, or wanting someone safe nearby." }
           ]
         },
         {
-          title: "Consent Over Time",
+          title: "Trusted Support, If Wanted",
           fields: [
-            {
-              type: "checkboxes",
-              name: "consent_needs",
-              label: "What consent checks would make intimacy and care safer?",
-              options: [
-                ["person_current_wishes", "Current wishes, asked gently and more than once"],
-                ["decision_specific_capacity", "Capacity considered for this specific decision"],
-                ["repeat_without_pressure", "Repeat, slow down or stop without pressure"],
-                ["trusted_person_can_slow", "Trusted person can slow the process"],
-                ["substitute_decision_maker", "Substitute decision-maker or EPOA check"],
-                ["carer_separate_needs", "Carer support needs considered separately"],
-                ["clinician_or_legal_review", "Clinician or legal review where needed"],
-                ["privacy_review", "Privacy and data-sharing review"],
-                ["never_publicly_ask", "Never ask or imply this publicly"]
-              ]
-            },
-            {
-              type: "select",
-              name: "default_intimacy_visibility",
-              label: "Default sharing layer for this intimacy file",
-              options: [
-                ["private", "Private"],
-                ["trusted_only", "Trusted person only"],
-                ["care_circle_only", "Care circle only"],
-                ["clinical_team_only", "Clinician or support team only"],
-                ["research_deidentified", "De-identified research only"],
-                ["never_publish", "Never publish"]
-              ]
-            },
-            { type: "textarea", name: "who_can_see", label: "Who may see which parts?", hint: "Separate self, partner, date, spouse, carer, family, clinician, counsellor, support worker, researcher, AI assistant and public layers." },
-            { type: "textarea", name: "never_share", label: "What would feel like a betrayal if shared?", hint: "Diagnosis, risk, desire, identity, private health details, exact location, distress events, family conflict, money/legal details, or anything intimate that was offered in trust." }
+            { type: "textarea", name: "support_people", label: "Who, if anyone, may help me make sense of this?", hint: "No one, a partner, friend, family member, trusted carer, counsellor, advocate, clinician, community elder, chosen family, or someone I have not chosen yet." },
+            { type: "textarea", name: "helper_do", label: "What should a trusted helper do?", hint: "Listen, slow down, ask simple questions, write exactly what I say, check comfort, help me leave, remind me of my values, or protect privacy." },
+            { type: "textarea", name: "helper_not_do", label: "What should a trusted helper not do?", hint: "Decide for me, rush, tease, translate my words into their agenda, share it, make assumptions about desire, minimise me, or turn uncertainty into permission." },
+            { type: "textarea", name: "professional_or_emergency", label: "When should this leave the private reflection space and go to proper human support?", hint: "Safety, coercion, abuse, exploitation, serious distress, medical concern, legal capacity, money pressure, emergency, or any intimacy that feels uncertain or unsafe." }
           ]
         },
         {
-          title: "Care Circle Without Taking Over",
+          title: "Sharing and Privacy",
           fields: [
-            { type: "textarea", name: "support_people", label: "Who helps without taking over?", hint: "Partner, chosen family, adult children, friend, GP, counsellor, elder, carer, support worker, advocate, community host or nobody yet." },
-            { type: "textarea", name: "human_review", label: "Who should be involved before any serious change?", hint: "A trusted adult, clinician, legal decision-maker, counsellor, safeguarding service, ethics committee or the person themselves after more time." },
-            { type: "textarea", name: "what_helps", label: "What helps this person return to themselves?", hint: "Music, humour, familiar beauty, a walk, quiet, food, hydration, prayer, gentle touch with permission, routine, photo, voice, place, pet, or person." },
-            { type: "textarea", name: "not_symptoms", label: "What should not be reduced to symptoms?", hint: "Desire, grief, flirtation, spirituality, playfulness, stubbornness, cultural expression, old wounds, sexuality, love, loneliness or a need for beauty." }
+            { type: "textarea", name: "share_with_one", label: "What could I share with one trusted person, if anything?", hint: "A feeling, a preference, a worry, a boundary, a question, a request for patience, or nothing yet." },
+            { type: "textarea", name: "private_unless_asked_again", label: "What should stay private unless I choose again later?", hint: "Health, memory worries, family history, attraction, sexual preferences, body boundaries, relationship context, grief, location, money, names or anything still forming." },
+            { type: "textarea", name: "never_public_or_ai", label: "What should never be made public or fed into AI as context?", hint: "Anything that could expose diagnosis, risk, longing, identity, relationship details, vulnerability, exact place, family conflict, consent uncertainty or private trust." },
+            { type: "textarea", name: "public_words_if_any", label: "What public words, if any, could invite connection without revealing me?", hint: "A general invitation, listening circle, arts night, care table, question, community event, or no public words at all." }
           ]
         },
         {
-          title: "Human Guardrails",
+          title: "A Small Next Step",
           fields: [
-            { type: "textarea", name: "urgent_boundaries", label: "What must always go to a human immediately?", hint: "Safety risk, coercion, abuse, exploitation, distress, medical concern, legal decision, financial pressure, emergency, or any intimacy that feels uncertain." },
-            { type: "textarea", name: "ai_boundary", label: "What should AI only help word, sort or remember, never decide?", hint: "Consent, diagnosis, treatment, capacity, legal authority, romantic permission, sexual choices, public exposure, money, safety or who gets access." },
-            { type: "textarea", name: "professional_questions", label: "What questions belong with a GP, clinician, counsellor, lawyer or safeguarding service?", hint: "Medical changes, diagnosis, medication, capacity, substitute decision-making, abuse risk, privacy law, care plans, sexuality and consent support, or research ethics." },
-            { type: "textarea", name: "public_boundary", label: "What could be said publicly, if anything, without exposing diagnosis, longing or family vulnerability?", hint: "A general invitation, listening circle, arts night, care table or community question that does not reveal private health, relationship or intimacy context." }
+            { type: "textarea", name: "gentlest_next_question", label: "What is the gentlest next question?", hint: "A question for myself, a person I trust, a partner, a doctor, a counsellor, an advocate, or nobody until I have rested." },
+            { type: "textarea", name: "pause_well", label: "How do I want to pause well?", hint: "Save the file, clear the page, close the laptop, drink water, ask someone safe, wait a week, print it, delete it, or leave it unfinished." },
+            { type: "textarea", name: "saved_for_later", label: "What do I want this .md file to remember for later?", hint: "My words today, my boundaries, my preferences, what not to assume, who may help, what must stay private, and what still needs time." }
           ]
         }
       ]
