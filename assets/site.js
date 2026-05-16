@@ -24,13 +24,13 @@
               label: "I confirm I am an adult and this draft is for lawful, consent-led connection only.",
               markdownLabel: "Adult-only confirmation"
             },
-            { type: "text", name: "display_name", label: "What name feels comfortable here?", hint: "Use a real name, nickname, handle, or temporary name. The point is ease, not exposure." },
-            { type: "text", name: "place_band", label: "Where are you connecting from or toward?", hint: "Local, nearby, online-first, travelling, further away, returning home, or not sure." },
+            { type: "text", name: "display_name", label: "What name feels comfortable here?", hint: "A real name, nickname, handle, temporary name, or something softer for now?" },
+            { type: "text", name: "place_band", label: "Where are you connecting from or toward?", hint: "Local, nearby, online-first, travelling, further away, returning home, or not sure?" },
             {
               type: "select",
               name: "default_visibility",
               label: "What pace would make this feel less anxious?",
-              hint: "Choose the pace that protects your nervous system.",
+              hint: "A pace that protects your nervous system?",
               options: [
                 ["slow_and_gentle", "Slow and gentle"],
                 ["friendly_first", "Friendly first"],
@@ -39,22 +39,22 @@
                 ["not_sure_yet", "Not sure yet"]
               ]
             },
-            { type: "textarea", name: "public_signal", label: "What would help you feel safe enough to begin?", hint: "A kind first message, no pressure to reply, shared humour, clear intentions, a public setting, a trusted intro, time to think, or something else." }
+            { type: "textarea", name: "public_signal", label: "What would help you feel safe enough to begin?", hint: "A kind first message, no pressure to reply, shared humour, clear intentions, a public setting, a trusted intro, time to think, or something else?" }
           ]
         },
         {
           title: "Warmth and Recognition",
           fields: [
-            { type: "textarea", name: "similar_humanity", label: "What parts of shared humanity make you soften?", hint: "Kindness, curiosity, music, humour, grief, faith, play, care, making things, learning, resilience, sensuality, service, quietness, courage." },
-            { type: "textarea", name: "diversity_welcome", label: "What kinds of difference could feel beautiful, not frightening?", hint: "Distance, culture, language, age within legal adult limits, neurotype, body, gender, sexuality, spirituality, class, ability, relationship shape, or life path." },
-            { type: "textarea", name: "abundance_values", label: "What does joyful responsible abundance feel like in intimacy?", hint: "More time, more honesty, more kindness, more play, more care, more patience, more mutual thriving, more room to be real." }
+            { type: "textarea", name: "similar_humanity", label: "What parts of shared humanity make you soften?", hint: "Kindness, curiosity, music, humour, grief, faith, play, care, making things, learning, resilience, sensuality, service, quietness, or courage?" },
+            { type: "textarea", name: "diversity_welcome", label: "What kinds of difference could feel beautiful, not frightening?", hint: "Distance, culture, language, age within legal adult limits, neurotype, body, gender, sexuality, spirituality, class, ability, relationship shape, or life path?" },
+            { type: "textarea", name: "abundance_values", label: "What does joyful responsible abundance feel like in intimacy?", hint: "More time, more honesty, more kindness, more play, more care, more patience, more mutual thriving, or more room to be real?" }
           ]
         },
         {
           title: "Soft Edges",
           fields: [
-            { type: "textarea", name: "private_edges", label: "What is not ready to be touched yet?", hint: "History, vulnerability, attraction, identity, health, family, money, exact location, body, grief, trauma, private longing, or anything that needs time." },
-            { type: "textarea", name: "open_questions", label: "What would a kind person ask before going deeper?", hint: "Write questions that would make you breathe easier, not freeze up." }
+            { type: "textarea", name: "private_edges", label: "What is not ready to be touched yet?", hint: "History, vulnerability, attraction, identity, health, family, money, exact location, body, grief, trauma, private longing, or anything that needs time?" },
+            { type: "textarea", name: "open_questions", label: "What would a kind person ask before going deeper?", hint: "Questions that would make breathing easier rather than freezing up?" }
           ]
         }
       ]
@@ -68,11 +68,11 @@
         {
           title: "Comfort Layers",
           fields: [
-            { type: "textarea", name: "public_allowed", label: "What feels easy to share?", hint: "Light, public-safe signals that would not make you anxious if someone saw them." },
-            { type: "textarea", name: "trusted_only", label: "What needs some trust first?", hint: "Things a known person, host, organiser or helper may understand after context is clear." },
-            { type: "textarea", name: "match_only", label: "What only belongs inside mutual yes?", hint: "Desires, attraction, tenderness, deeper hope, body language, private invitations, or anything that needs reciprocal interest." },
-            { type: "textarea", name: "private_only", label: "What is only for your own clarity?", hint: "Useful for self-understanding or private AI reflection, but not for anyone else yet." },
-            { type: "textarea", name: "never_publish", label: "What must never become a public clue?", hint: "Anything that could expose identity, vulnerability, longing, trauma, health, location, family, money or intimate context." }
+            { type: "textarea", name: "public_allowed", label: "What feels easy to share?", hint: "Light, public-safe signals that would not make anxiety spike if someone saw them?" },
+            { type: "textarea", name: "trusted_only", label: "What needs some trust first?", hint: "Things a known person or chosen helper might understand after context is clear?" },
+            { type: "textarea", name: "match_only", label: "What only belongs inside mutual yes?", hint: "Desires, attraction, tenderness, deeper hope, body language, private invitations, or anything that needs reciprocal interest?" },
+            { type: "textarea", name: "private_only", label: "What is only for your own clarity?", hint: "For self-understanding or private AI reflection, but not for anyone else yet?" },
+            { type: "textarea", name: "never_publish", label: "What must never become a public clue?", hint: "Anything that could expose identity, vulnerability, longing, trauma, health, location, family, money, or intimate context?" }
           ]
         },
         {
@@ -102,7 +102,7 @@
                 ["not_sure", "Not sure yet"]
               ]
             },
-            { type: "textarea", name: "human_review", label: "Who helps you feel safer with sensitive choices?", hint: "A friend, elder, carer, therapist, organiser, host, community member, or simply yourself after more time." }
+            { type: "textarea", name: "human_review", label: "Who helps you feel safer with sensitive choices?", hint: "A friend, elder, carer, therapist, community member, chosen helper, or simply yourself after more time?" }
           ]
         }
       ]
@@ -149,23 +149,23 @@
                 ["not_sure", "Not sure yet"]
               ]
             },
-            { type: "textarea", name: "what_feels_safe", label: "What would make the first step feel less anxious?", hint: "A small message, shared activity, trusted intro, no pressure, direct words, humour, a public setting, a slow voice, time to reply, or permission to pause." }
+            { type: "textarea", name: "what_feels_safe", label: "What would make the first step feel less anxious?", hint: "A small message, shared activity, trusted intro, no pressure, direct words, humour, a public setting, a slow voice, time to reply, or permission to pause?" }
           ]
         },
         {
           title: "Signals That Help",
           fields: [
-            { type: "textarea", name: "green_flags", label: "What makes you relax and open?", hint: "Care, maturity, humour, patience, mutual curiosity, clean boundaries, consent, reliability, spiritual resonance, playfulness, shared values." },
-            { type: "textarea", name: "yellow_flags", label: "What means slow down, but not necessarily stop?", hint: "Mixed signals, intensity, distance, life complexity, nervousness, unclear availability, cultural difference, or needing a better context." },
-            { type: "textarea", name: "red_lines", label: "What is a clear stop?", hint: "Anything illegal, coercive, unsafe, manipulative, non-consensual, involving minors, privacy-breaking, cruel, dishonest or against your values." },
-            { type: "textarea", name: "distance_diversity", label: "How can distance and difference be held gently?", hint: "Further away, very different backgrounds, online-first connection, travel, language, culture, disability, neurotype, relationship style, or spiritual worldview." }
+            { type: "textarea", name: "green_flags", label: "What makes you relax and open?", hint: "Care, maturity, humour, patience, mutual curiosity, clean boundaries, consent, reliability, spiritual resonance, playfulness, or shared values?" },
+            { type: "textarea", name: "yellow_flags", label: "What means slow down, but not necessarily stop?", hint: "Mixed signals, intensity, distance, life complexity, nervousness, unclear availability, cultural difference, or needing a better context?" },
+            { type: "textarea", name: "red_lines", label: "What is a clear stop?", hint: "Anything illegal, coercive, unsafe, manipulative, non-consensual, involving minors, privacy-breaking, cruel, dishonest, or against your values?" },
+            { type: "textarea", name: "distance_diversity", label: "How can distance and difference be held gently?", hint: "Further away, very different backgrounds, online-first connection, travel, language, culture, disability, neurotype, relationship style, or spiritual worldview?" }
           ]
         },
         {
           title: "Questions That Deepen Without Pushing",
           fields: [
-            { type: "textarea", name: "deeper_questions", label: "What questions would help trust grow?", hint: "Ask about love, care, body, spirit, history, attachment, fear, joy or longing in ways that allow no, maybe, later, or not public." },
-            { type: "textarea", name: "not_for_public", label: "What should never be turned into a public hint?", hint: "Anything that would make the person feel exposed, teased, hunted, reduced, pressured or misunderstood." }
+            { type: "textarea", name: "deeper_questions", label: "What questions would help trust grow?", hint: "Love, care, body, spirit, history, attachment, fear, joy, or longing in ways that allow no, maybe, later, or not public?" },
+            { type: "textarea", name: "not_for_public", label: "What should never be turned into a public hint?", hint: "Anything that would make the person feel exposed, teased, hunted, reduced, pressured, or misunderstood?" }
           ]
         }
       ]
@@ -179,45 +179,45 @@
         {
           title: "Quiet Starting Point",
           fields: [
-            { type: "textarea", name: "why_here", label: "What am I trying to understand about connection right now?", hint: "Only what feels true today. This might be closeness, distance, attraction, trust, memory worries, family history, care, partnership, dating, or having no clear words yet." },
-            { type: "textarea", name: "answering_context", label: "What would help me answer without feeling watched, judged or rushed?", hint: "Privacy, time, simpler words, humour, quiet, a trusted person, no helper, taking breaks, or leaving hard parts blank." },
-            { type: "textarea", name: "trusted_support_optional", label: "If someone is helping, what do I want their role to be?", hint: "They might sit with me, help me read the questions, type exactly what I say, remind me I can skip anything, or step away when I want privacy." }
+            { type: "textarea", name: "why_here", label: "What am I trying to understand about connection right now?", hint: "Closeness, distance, attraction, trust, memory worries, family history, care, partnership, dating, or having no clear words yet?" },
+            { type: "textarea", name: "answering_context", label: "What would help me answer without feeling watched, judged or rushed?", hint: "Privacy, time, simpler words, humour, quiet, a trusted person, no helper, taking breaks, or leaving hard parts blank?" },
+            { type: "textarea", name: "trusted_support_optional", label: "If someone is helping, what do I want their role to be?", hint: "Sitting with me, helping me read the questions, typing exactly what I say, reminding me I can skip anything, or stepping away when I want privacy?" }
           ]
         },
         {
           title: "Preferences For Connection",
           fields: [
-            { type: "textarea", name: "wanted_connection", label: "What kinds of connection feel nourishing, possible or worth wondering about?", hint: "Companionship, friendship, romance, flirting, sensuality, cuddling, shared silence, humour, spiritual closeness, creative play, practical care, or simply being near someone." },
-            { type: "textarea", name: "not_wanted_or_not_clear", label: "What feels unwanted, unclear, too fast or not for now?", hint: "Touch, disclosure, pressure to decide, family involvement, public labels, private meetings, sex, dating, caregiving, AI interpretation, or anything that needs more time." },
-            { type: "textarea", name: "asking_consent", label: "How do I like consent, comfort or willingness to be checked?", hint: "Specific words, yes/no/maybe options, gentle repetition, written notes, body cues, asking later, asking privately, or a trusted person helping slow the moment." },
-            { type: "textarea", name: "safe_no", label: "What helps a no, maybe, later or I do not know feel respected?", hint: "No persuasion, no sulking, no public embarrassment, a graceful pause, changing topic, staying kind, or ending the conversation cleanly." }
+            { type: "textarea", name: "wanted_connection", label: "What kinds of connection feel nourishing, possible or worth wondering about?", hint: "Companionship, friendship, romance, flirting, sensuality, cuddling, shared silence, humour, spiritual closeness, creative play, practical care, or simply being near someone?" },
+            { type: "textarea", name: "not_wanted_or_not_clear", label: "What feels unwanted, unclear, too fast or not for now?", hint: "Touch, disclosure, pressure to decide, family involvement, public labels, private meetings, sex, dating, caregiving, AI interpretation, or anything that needs more time?" },
+            { type: "textarea", name: "asking_consent", label: "How do I like consent, comfort or willingness to be checked?", hint: "Specific words, yes/no/maybe options, gentle repetition, written notes, body cues, asking later, asking privately, or a trusted person helping slow the moment?" },
+            { type: "textarea", name: "safe_no", label: "What helps a no, maybe, later or I do not know feel respected?", hint: "No persuasion, no sulking, no public embarrassment, a graceful pause, changing topic, staying kind, or ending the conversation cleanly?" }
           ]
         },
         {
           title: "Memory, Change and Family Story",
           fields: [
-            { type: "textarea", name: "memory_context", label: "If memory-related change is part of my life or family story, what do I want held gently?", hint: "A family pattern, a personal worry, a diagnosis, no diagnosis, uncertainty, grief, hope, recovery, fear of being assumed about, or nothing that needs naming yet." },
-            { type: "textarea", name: "still_me", label: "What do I want people to remember is still me?", hint: "Humour, sexuality, faith, culture, stubbornness, tenderness, beauty, privacy, playfulness, intelligence, grief, desire, ordinary preferences, or changing needs." },
-            { type: "textarea", name: "future_self", label: "What would future me want protected if memory or confidence changed?", hint: "Dignity, privacy, slow consent, not being infantilised, not being rushed, not being exposed, chosen relationships, body boundaries, joy, and the right to pause." },
-            { type: "textarea", name: "signals_for_support", label: "What signs might mean I need more time, simpler words or trusted support?", hint: "Confusion, distress, people disagreeing, feeling pressured, forgetting a choice, not recognising context, fatigue, fear, silence, or wanting someone safe nearby." }
+            { type: "textarea", name: "memory_context", label: "If memory-related change is part of my life or family story, what do I want held gently?", hint: "A family pattern, a personal worry, a diagnosis, no diagnosis, uncertainty, grief, hope, recovery, fear of being assumed about, or nothing that needs naming yet?" },
+            { type: "textarea", name: "still_me", label: "What do I want people to remember is still me?", hint: "Humour, sexuality, faith, culture, stubbornness, tenderness, beauty, privacy, playfulness, intelligence, grief, desire, ordinary preferences, or changing needs?" },
+            { type: "textarea", name: "future_self", label: "What would future me want protected if memory or confidence changed?", hint: "Dignity, privacy, slow consent, not being infantilised, not being rushed, not being exposed, chosen relationships, body boundaries, joy, or the right to pause?" },
+            { type: "textarea", name: "signals_for_support", label: "What signs might mean I need more time, simpler words or trusted support?", hint: "Confusion, distress, people disagreeing, feeling pressured, forgetting a choice, not recognising context, fatigue, fear, silence, or wanting someone safe nearby?" }
           ]
         },
         {
           title: "Trusted Support, If Wanted",
           fields: [
-            { type: "textarea", name: "support_people", label: "Who, if anyone, may help me make sense of this?", hint: "No one, a partner, friend, family member, trusted carer, counsellor, advocate, clinician, community elder, chosen family, or someone I have not chosen yet." },
-            { type: "textarea", name: "helper_do", label: "What should a trusted helper do?", hint: "Listen, slow down, ask simple questions, write exactly what I say, check comfort, help me leave, remind me of my values, or protect privacy." },
-            { type: "textarea", name: "helper_not_do", label: "What should a trusted helper not do?", hint: "Decide for me, rush, tease, translate my words into their agenda, share it, make assumptions about desire, minimise me, or turn uncertainty into permission." },
-            { type: "textarea", name: "professional_or_emergency", label: "When should this leave the private reflection space and go to proper human support?", hint: "Safety, coercion, abuse, exploitation, serious distress, medical concern, legal capacity, money pressure, emergency, or any intimacy that feels uncertain or unsafe." }
+            { type: "textarea", name: "support_people", label: "Who, if anyone, may help me make sense of this?", hint: "No one, a partner, friend, family member, trusted carer, counsellor, advocate, clinician, community elder, chosen family, or someone I have not chosen yet?" },
+            { type: "textarea", name: "helper_do", label: "What should a trusted helper do?", hint: "Listening, slowing down, asking simple questions, writing exactly what I say, checking comfort, helping me leave, reminding me of my values, or protecting privacy?" },
+            { type: "textarea", name: "helper_not_do", label: "What should a trusted helper not do?", hint: "Deciding for me, rushing, teasing, translating my words into their agenda, sharing it, assuming desire, minimising me, or turning uncertainty into permission?" },
+            { type: "textarea", name: "professional_or_emergency", label: "When should this leave the private reflection space and go to proper human support?", hint: "Safety, coercion, abuse, exploitation, serious distress, medical concern, legal capacity, money pressure, emergency, or any intimacy that feels uncertain or unsafe?" }
           ]
         },
         {
           title: "Sharing and Privacy",
           fields: [
-            { type: "textarea", name: "share_with_one", label: "What could I share with one trusted person, if anything?", hint: "A feeling, a preference, a worry, a boundary, a question, a request for patience, or nothing yet." },
-            { type: "textarea", name: "private_unless_asked_again", label: "What should stay private unless I choose again later?", hint: "Health, memory worries, family history, attraction, sexual preferences, body boundaries, relationship context, grief, location, money, names or anything still forming." },
-            { type: "textarea", name: "never_public_or_ai", label: "What should never be made public or fed into AI as context?", hint: "Anything that could expose diagnosis, risk, longing, identity, relationship details, vulnerability, exact place, family conflict, consent uncertainty or private trust." },
-            { type: "textarea", name: "public_words_if_any", label: "What public words, if any, could invite connection without revealing me?", hint: "A general invitation, listening circle, arts night, care table, question, community event, or no public words at all." }
+            { type: "textarea", name: "share_with_one", label: "What could I share with one trusted person, if anything?", hint: "A feeling, a preference, a worry, a boundary, a question, a request for patience, or nothing yet?" },
+            { type: "textarea", name: "private_unless_asked_again", label: "What should stay private unless I choose again later?", hint: "Health, memory worries, family history, attraction, sexual preferences, body boundaries, relationship context, grief, location, money, names, or anything still forming?" },
+            { type: "textarea", name: "never_public_or_ai", label: "What should never be made public or fed into AI as context?", hint: "Anything that could expose diagnosis, risk, longing, identity, relationship details, vulnerability, exact place, family conflict, consent uncertainty, or private trust?" },
+            { type: "textarea", name: "public_words_if_any", label: "What public words, if any, could invite connection without revealing me?", hint: "A general invitation, listening circle, arts night, care table, question, community event, or no public words at all?" }
           ]
         }
       ]
@@ -231,7 +231,7 @@
         {
           title: "Connection Signal",
           fields: [
-            { type: "text", name: "bridge_title", label: "What simple public title could lower the barrier to connection?", hint: "Keep it warm, plain and non-revealing. A title should make a kind first step easier, not explain everything." },
+            { type: "text", name: "bridge_title", label: "What simple public title could lower the barrier to connection?", hint: "Warm, plain, non-revealing words that make a kind first step easier without explaining everything?" },
             {
               type: "checkboxes",
               name: "connection_openings",
@@ -247,8 +247,8 @@
                 ["trusted_introduction", "Trusted introduction"]
               ]
             },
-            { type: "textarea", name: "public_signal", label: "What can I choose to say publicly without making the private reflection public?", hint: "A gentle invitation, shared value, activity, question, interest, location level, availability window, or a simple openness to hear from someone." },
-            { type: "textarea", name: "low_pressure_response", label: "What would make it easier for someone kind to respond?", hint: "A tiny first message, a shared prompt, no instant decision, a public setting, a slow reply window, an opt-in intro, humour, or permission to pass." }
+            { type: "textarea", name: "public_signal", label: "What can I choose to say publicly without making the private reflection public?", hint: "A gentle invitation, shared value, activity, question, interest, location level, availability window, or a simple openness to hear from someone?" },
+            { type: "textarea", name: "low_pressure_response", label: "What would make it easier for someone kind to respond?", hint: "A tiny first message, a shared prompt, no instant decision, a public setting, a slow reply window, an opt-in intro, humour, or permission to pass?" }
           ]
         },
         {
@@ -283,24 +283,24 @@
                 ["public_web", "Public web"]
               ]
             },
-            { type: "textarea", name: "private_by_default", label: "What stays private unless I choose again?", hint: "Names, exact location, diagnosis, family history, attraction, body details, money, conflict, contact details, anything still uncertain, or anything not explicitly selected." },
-            { type: "textarea", name: "permission_check", label: "When do I want to be asked again?", hint: "Before matching, before an introduction, before AI summarises, before public posting, after time passes, when feelings change, or whenever someone asks for more detail." }
+            { type: "textarea", name: "private_by_default", label: "What stays private unless I choose again?", hint: "Names, exact location, diagnosis, family history, attraction, body details, money, conflict, contact details, anything still uncertain, or anything not explicitly selected?" },
+            { type: "textarea", name: "permission_check", label: "When do I want to be asked again?", hint: "Before matching, before an introduction, before AI summarises, before public posting, after time passes, when feelings change, or whenever someone asks for more detail?" }
           ]
         },
         {
           title: "First Contact Comfort",
           fields: [
-            { type: "textarea", name: "welcome_responses", label: "What kinds of responses would feel welcome?", hint: "A short hello, a shared interest, a gentle question, an invitation, a story, a practical offer, a slower conversation, or a trusted introduction." },
-            { type: "textarea", name: "not_welcome", label: "What would raise anxiety or feel like pressure?", hint: "Demands, sexualised assumptions, instant intimacy, diagnosis talk, advice, interrogation, public tagging, urgency, sales energy, or asking for private details too soon." },
-            { type: "textarea", name: "first_step_container", label: "What container would make first contact safer?", hint: "A commons message, moderated intro, public activity, group setting, slow email, voice note later, trusted helper, or another permission check before direct contact." }
+            { type: "textarea", name: "welcome_responses", label: "What kinds of responses would feel welcome?", hint: "A short hello, a shared interest, a gentle question, an invitation, a story, a practical offer, a slower conversation, or a trusted introduction?" },
+            { type: "textarea", name: "not_welcome", label: "What would raise anxiety or feel like pressure?", hint: "Demands, sexualised assumptions, instant intimacy, diagnosis talk, advice, interrogation, public tagging, urgency, sales energy, or asking for private details too soon?" },
+            { type: "textarea", name: "first_step_container", label: "What container would make first contact safer?", hint: "A commons message, moderated intro, public activity, group setting, slow email, voice note later, trusted helper, or another permission check before direct contact?" }
           ]
         },
         {
           title: "Owner-Controlled Use",
           fields: [
-            { type: "textarea", name: "allowed_uses", label: "What may the commons do with the selected parts?", hint: "Show them, match from them, help with an introduction, hold them privately, summarise them, invite a response, or do nothing until I say so." },
-            { type: "textarea", name: "not_allowed_uses", label: "What is not allowed without asking me again?", hint: "Copying, reposting, profiling, ranking, inferring desire, sharing health or family context, keeping contact details, or using it for AI memory." },
-            { type: "textarea", name: "change_or_withdraw", label: "How can I change, pause or withdraw this .md?", hint: "Edit it, replace it, delete it, turn off matching, set an expiry date, or ask a chosen helper to remove the shared copy." }
+            { type: "textarea", name: "allowed_uses", label: "What may the commons do with the selected parts?", hint: "Showing them, matching from them, helping with an introduction, holding them privately, summarising them, inviting a response, or doing nothing until I say so?" },
+            { type: "textarea", name: "not_allowed_uses", label: "What is not allowed without asking me again?", hint: "Copying, reposting, profiling, ranking, inferring desire, sharing health or family context, keeping contact details, or using it for AI memory?" },
+            { type: "textarea", name: "change_or_withdraw", label: "How can I change, pause or withdraw this .md?", hint: "Editing it, replacing it, deleting it, turning off matching, setting an expiry date, or asking a chosen helper to remove the shared copy?" }
           ]
         }
       ]
@@ -340,15 +340,15 @@
                 ["contact_person", "Before contacting or introducing anyone"]
               ]
             },
-            { type: "textarea", name: "tone", label: "What tone would make AI feel less weird here?", hint: "Plain, warm, patient, adult, careful, curious, direct, non-salesy, Australian, spiritual, practical, playful, soft, or quiet." }
+            { type: "textarea", name: "tone", label: "What tone would make AI feel less weird here?", hint: "Plain, warm, patient, adult, careful, curious, direct, non-salesy, Australian, spiritual, practical, playful, soft, or quiet?" }
           ]
         },
         {
           title: "When AI Must Step Back",
           fields: [
-            { type: "textarea", name: "refuse", label: "AI must pause when", hint: "Illegal, minor-related, coercive, exploitative, unsafe, non-consensual, privacy-breaking, manipulative, too intense, or too emotionally hot." },
-            { type: "textarea", name: "escalate", label: "What belongs back with humans?", hint: "Name the kinds of judgement that need a person, not an automated answer." },
-            { type: "textarea", name: "audit_trail", label: "What should be remembered as a permission note?", hint: "Dates, consent changes, no-go lines, who approved what, and what must be deleted or re-checked." }
+            { type: "textarea", name: "refuse", label: "AI must pause when", hint: "Something seems illegal, minor-related, coercive, exploitative, unsafe, non-consensual, privacy-breaking, manipulative, too intense, or too emotionally hot?" },
+            { type: "textarea", name: "escalate", label: "What belongs back with humans?", hint: "Judgement calls that need a person rather than an automated answer?" },
+            { type: "textarea", name: "audit_trail", label: "What should be remembered as a permission note?", hint: "Dates, consent changes, no-go lines, who approved what, or what must be deleted or re-checked?" }
           ]
         }
       ]
