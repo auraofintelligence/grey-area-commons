@@ -172,7 +172,7 @@
     },
     clinicalPathway: {
       title: "Memory, Love and Intimacy",
-      schema: "grey_area_commons.memory_intimacy_pathway.v2",
+      schema: "grey_area_commons.memory_intimacy_pathway.v3",
       filename: "memory-intimacy-pathway.md",
       intro: "A softer self-reflection path for adults exploring loving connection while memory questions, dementia concerns, family history of memory-related decline, care or changing capacity may be somewhere in the background. It does not assume diagnosis, relationship status or support needs.",
       sections: [
@@ -221,11 +221,11 @@
           ]
         },
         {
-          title: "A Small Next Step",
+          title: "Selective Commons Sharing",
           fields: [
-            { type: "textarea", name: "gentlest_next_question", label: "What is the gentlest next question?", hint: "A question for myself, a person I trust, a partner, a doctor, a counsellor, an advocate, or nobody until I have rested." },
-            { type: "textarea", name: "pause_well", label: "How do I want to pause well?", hint: "Save the file, clear the page, close the laptop, drink water, ask someone safe, wait a week, print it, delete it, or leave it unfinished." },
-            { type: "textarea", name: "saved_for_later", label: "What do I want this .md file to remember for later?", hint: "My words today, my boundaries, my preferences, what not to assume, who may help, what must stay private, and what still needs time." }
+            { type: "textarea", name: "commons_share_ready", label: "What part of this reflection, if any, feels ready to share through the commons?", hint: "A preference, boundary, invitation, question, connection hope, care context, or nothing yet." },
+            { type: "textarea", name: "connection_invitation", label: "What kind of connection could this help invite?", hint: "Friendship, conversation, companionship, romance, shared care, creative collaboration, community support, trusted introductions, or simply more understanding." },
+            { type: "textarea", name: "sharing_permissions", label: "What permission should travel with the shared .md?", hint: "Who may see it, what may be matched, what should stay private, whether AI may summarise, and when consent should be checked again." }
           ]
         }
       ]
@@ -497,7 +497,7 @@
       "",
       builder.intro,
       "",
-      "This Markdown file was generated locally in the browser. Treat it as a gentle question map and personal draft, not consent, publication approval or a promise.",
+      "This Markdown file was generated locally in the browser. Treat it as a gentle question map and personal draft. Only selected parts should be shared through the commons, and only with the permissions named here.",
       ""
     ];
 
@@ -509,12 +509,12 @@
     content.push(
       "---",
       "",
-      "## Standing boundaries",
+      "## Commons sharing boundaries",
       "",
       "- Adult-only and lawful.",
+      "- Share selected parts only; private reflection stays private by default.",
       "- No minors, coercion, exploitation, stalking, doxxing, pressure or privacy breaking.",
-      "- Questions should reduce anxiety, not create pressure.",
-      "- Private aura material must not be copied into public noticeboards.",
+      "- Questions should reduce anxiety and support willing connection.",
       "- AI helpers must ask before inferring, matching, storing or publishing.",
       "- The person may change or withdraw permission later.",
       ""
