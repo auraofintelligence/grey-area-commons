@@ -224,9 +224,9 @@
     },
     noticeboards: {
       title: "Public Bridge",
-      schema: "grey_area_commons.commons_connection_bridge.v1",
+      schema: "grey_area_commons.commons_connection_bridge.v2",
       filename: "commons-connection-bridge.md",
-      intro: "A selective bridge for people seeking connection after self-reflection. It turns chosen, permissioned pieces of private Markdown into a low-pressure commons signal, so saying hello feels easier and less exposed.",
+      intro: "An owner-controlled bridge for people seeking connection after self-reflection. The person keeps their own .md files and chooses which pieces, if any, can become a low-pressure commons signal.",
       sections: [
         {
           title: "Connection Signal",
@@ -247,17 +247,17 @@
                 ["trusted_introduction", "Trusted introduction"]
               ]
             },
-            { type: "textarea", name: "public_signal", label: "What can be said publicly without making the private reflection public?", hint: "A gentle invitation, shared value, activity, question, interest, location level, availability window, or a simple openness to hear from someone." },
+            { type: "textarea", name: "public_signal", label: "What can I choose to say publicly without making the private reflection public?", hint: "A gentle invitation, shared value, activity, question, interest, location level, availability window, or a simple openness to hear from someone." },
             { type: "textarea", name: "low_pressure_response", label: "What would make it easier for someone kind to respond?", hint: "A tiny first message, a shared prompt, no instant decision, a public setting, a slow reply window, an opt-in intro, humour, or permission to pass." }
           ]
         },
         {
-          title: "Selective Permissions",
+          title: "My Selected Permissions",
           fields: [
             {
               type: "checkboxes",
               name: "shareable_parts",
-              label: "Which selected parts may travel into the commons?",
+              label: "Which parts of my .md am I choosing to make available?",
               options: [
                 ["public_title", "Public title"],
                 ["general_values", "General values or interests"],
@@ -271,19 +271,20 @@
             },
             {
               type: "select",
-              name: "commons_visibility",
-              label: "How visible should this bridge be?",
+              name: "use_scope",
+              label: "Where may the selected parts be used?",
               options: [
-                ["private_draft", "Private draft only"],
-                ["trusted_helper", "Trusted helper only"],
-                ["commons_host", "Commons host or steward"],
-                ["matched_people", "Matched people only"],
-                ["community_visible", "Community visible"],
+                ["keep_private", "Keep private for now"],
+                ["one_chosen_person", "One chosen person"],
+                ["trusted_introduction", "Trusted introduction only"],
+                ["chosen_small_circle", "Chosen small circle"],
+                ["commons_matching", "Commons matching with my permission"],
+                ["community_visible", "Community-visible notice"],
                 ["public_web", "Public web"]
               ]
             },
-            { type: "textarea", name: "private_by_default", label: "What must stay private by default?", hint: "Names, exact location, diagnosis, family history, attraction, body details, money, conflict, contact details, anything still uncertain, or anything not explicitly selected." },
-            { type: "textarea", name: "permission_check", label: "When should permission be checked again?", hint: "Before matching, before an introduction, before AI summarises, before public posting, after time passes, when feelings change, or whenever someone asks for more detail." }
+            { type: "textarea", name: "private_by_default", label: "What stays private unless I choose again?", hint: "Names, exact location, diagnosis, family history, attraction, body details, money, conflict, contact details, anything still uncertain, or anything not explicitly selected." },
+            { type: "textarea", name: "permission_check", label: "When do I want to be asked again?", hint: "Before matching, before an introduction, before AI summarises, before public posting, after time passes, when feelings change, or whenever someone asks for more detail." }
           ]
         },
         {
@@ -295,11 +296,11 @@
           ]
         },
         {
-          title: "Commons Stewardship",
+          title: "Owner-Controlled Use",
           fields: [
-            { type: "textarea", name: "bridge_steward", label: "Who may help steward this bridge, if anyone?", hint: "Self only, trusted helper, commons host, organiser, AI helper with explicit permission, or nobody until the wording feels clearer." },
-            { type: "textarea", name: "ai_or_host_limits", label: "What must hosts or AI helpers not infer?", hint: "Desire, availability, diagnosis, vulnerability, relationship status, identity, urgency, location, risk, compatibility, or permission to share more." },
-            { type: "textarea", name: "withdraw_or_update", label: "How can this bridge be changed, paused or withdrawn?", hint: "Who can edit it, how permission changes are recorded, when it expires, what should be deleted, and how people are told the bridge has changed." }
+            { type: "textarea", name: "allowed_uses", label: "What may the commons do with the selected parts?", hint: "Show them, match from them, help with an introduction, hold them privately, summarise them, invite a response, or do nothing until I say so." },
+            { type: "textarea", name: "not_allowed_uses", label: "What is not allowed without asking me again?", hint: "Copying, reposting, profiling, ranking, inferring desire, sharing health or family context, keeping contact details, or using it for AI memory." },
+            { type: "textarea", name: "change_or_withdraw", label: "How can I change, pause or withdraw this .md?", hint: "Edit it, replace it, delete it, turn off matching, set an expiry date, or ask a chosen helper to remove the shared copy." }
           ]
         }
       ]
@@ -520,7 +521,7 @@
       "",
       builder.intro,
       "",
-      "This Markdown file was generated locally in the browser. Treat it as a self-reflection and selective-sharing draft. Only selected parts should be shared through the commons, and only with the permissions named here.",
+      "This Markdown file was generated locally in the browser. The person controls the file and how it is used. Treat it as a self-reflection and selective-sharing draft; only selected parts may be shared through the commons, and only with the permissions named here.",
       ""
     ];
 
