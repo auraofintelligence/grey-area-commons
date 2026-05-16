@@ -174,7 +174,7 @@
       title: "Memory, Love and Intimacy",
       schema: "grey_area_commons.memory_intimacy_pathway.v1",
       filename: "memory-intimacy-pathway.md",
-      intro: "A softer grey-area path for adults navigating dementia onset, family history, diagnosis, care or recovery hope. It keeps love, tenderness, attraction, privacy and changing consent visible before anything is shared.",
+      intro: "A softer grey-area path for adults navigating dementia onset, family history of memory-related decline, diagnosis, care or recovery hope. It keeps love, tenderness, attraction, privacy and changing consent visible before anything is shared.",
       sections: [
         {
           title: "Heart Before Health",
@@ -221,7 +221,7 @@
         {
           title: "Family History and Future Self",
           fields: [
-            { type: "textarea", name: "family_history_context", label: "How does family history shape hope, fear or timing?", hint: "Patterns seen in parents, grandparents or siblings, what you want to do differently, what scares you, what gives hope, and what should not be assumed." },
+            { type: "textarea", name: "family_history_context", label: "How does family history of memory-related decline shape hope, fear or timing?", hint: "Patterns seen in parents, grandparents or siblings, what you want to do differently, what scares you, what gives hope, and what should not be assumed." },
             { type: "textarea", name: "future_wishes", label: "What would your future self want people to remember about love and dignity?", hint: "How to speak to you, touch you, include you, protect privacy, honour relationships, avoid infantilising you, and keep joy in the room." },
             { type: "textarea", name: "disclosure_choices", label: "Who knows about the risk, and who does not need to know yet?", hint: "Partner, dates, family, carers, GP, friends, workplace, community, online circles, AI tools, public noticeboards, or nobody yet." },
             { type: "textarea", name: "ordinary_joy", label: "What ordinary joys should stay in the picture?", hint: "Music, food, beauty, humour, touch with permission, nature, sexiness, prayer, stories, gardening, dancing, games, art, travel, work, rituals or rest." }
