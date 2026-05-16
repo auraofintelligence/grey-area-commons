@@ -172,7 +172,7 @@
     },
     clinicalPathway: {
       title: "Memory, Love and Intimacy",
-      schema: "grey_area_commons.memory_intimacy_pathway.v3",
+      schema: "grey_area_commons.memory_intimacy_pathway.v4",
       filename: "memory-intimacy-pathway.md",
       intro: "A softer self-reflection path for adults exploring loving connection while memory questions, dementia concerns, family history of memory-related decline, care or changing capacity may be somewhere in the background. It does not assume diagnosis, relationship status or support needs.",
       sections: [
@@ -219,64 +219,87 @@
             { type: "textarea", name: "never_public_or_ai", label: "What should never be made public or fed into AI as context?", hint: "Anything that could expose diagnosis, risk, longing, identity, relationship details, vulnerability, exact place, family conflict, consent uncertainty or private trust." },
             { type: "textarea", name: "public_words_if_any", label: "What public words, if any, could invite connection without revealing me?", hint: "A general invitation, listening circle, arts night, care table, question, community event, or no public words at all." }
           ]
-        },
-        {
-          title: "Selective Commons Sharing",
-          fields: [
-            { type: "textarea", name: "commons_share_ready", label: "What part of this reflection, if any, feels ready to share through the commons?", hint: "A preference, boundary, invitation, question, connection hope, care context, or nothing yet." },
-            { type: "textarea", name: "connection_invitation", label: "What kind of connection could this help invite?", hint: "Friendship, conversation, companionship, romance, shared care, creative collaboration, community support, trusted introductions, or simply more understanding." },
-            { type: "textarea", name: "sharing_permissions", label: "What permission should travel with the shared .md?", hint: "Who may see it, what may be matched, what should stay private, whether AI may summarise, and when consent should be checked again." }
-          ]
         }
       ]
     },
     noticeboards: {
       title: "Public Bridge",
-      schema: "grey_area_commons.noticeboard_bridge.v0",
-      filename: "noticeboard-bridge.md",
-      intro: "A public-safe bridge for invitations, events, circles and noticeboards. It must protect the tender private material that made the invitation possible.",
+      schema: "grey_area_commons.commons_connection_bridge.v1",
+      filename: "commons-connection-bridge.md",
+      intro: "A selective bridge for people seeking connection after self-reflection. It turns chosen, permissioned pieces of private Markdown into a low-pressure commons signal, so saying hello feels easier and less exposed.",
       sections: [
         {
-          title: "Invitation Without Exposure",
+          title: "Connection Signal",
           fields: [
-            { type: "text", name: "notice_title", label: "What public title feels safe and inviting?", hint: "Keep it clear, warm and non-revealing." },
+            { type: "text", name: "bridge_title", label: "What simple public title could lower the barrier to connection?", hint: "Keep it warm, plain and non-revealing. A title should make a kind first step easier, not explain everything." },
             {
               type: "checkboxes",
-              name: "roles",
-              label: "Who might hold the public layer?",
+              name: "connection_openings",
+              label: "What kinds of connection could this bridge invite?",
               options: [
-                ["host", "Host"],
-                ["organiser", "Organiser"],
-                ["participant", "Participant"],
-                ["visitor", "Visitor"],
-                ["trusted_helper", "Trusted helper"],
-                ["ai_assistant", "AI assistant"]
+                ["conversation", "Conversation"],
+                ["friendship", "Friendship"],
+                ["companionship", "Companionship"],
+                ["romance", "Romance"],
+                ["shared_interest", "Shared interest or activity"],
+                ["creative_collaboration", "Creative collaboration"],
+                ["community_support", "Community support"],
+                ["trusted_introduction", "Trusted introduction"]
               ]
             },
-            { type: "textarea", name: "public_invitation", label: "What can be invited publicly without pressure?", hint: "A gathering, circle, question, arts night, listening session, care table, travel idea, workshop or shared activity." },
-            { type: "textarea", name: "public_sources", label: "What public sources or noticeboards already exist?", hint: "Existing public pages, events, groups, profile links, or local noticeboard references." }
+            { type: "textarea", name: "public_signal", label: "What can be said publicly without making the private reflection public?", hint: "A gentle invitation, shared value, activity, question, interest, location level, availability window, or a simple openness to hear from someone." },
+            { type: "textarea", name: "low_pressure_response", label: "What would make it easier for someone kind to respond?", hint: "A tiny first message, a shared prompt, no instant decision, a public setting, a slow reply window, an opt-in intro, humour, or permission to pass." }
           ]
         },
         {
-          title: "Keep The Tender Parts Out",
+          title: "Selective Permissions",
           fields: [
             {
               type: "checkboxes",
-              name: "exclude_by_default",
-              label: "Do not leak",
+              name: "shareable_parts",
+              label: "Which selected parts may travel into the commons?",
               options: [
-                ["private_aura", "Private aura.md material"],
-                ["connection_intent", "Specific connection or attraction intent"],
-                ["exact_location", "Exact private location"],
-                ["contact_details", "Private contact details"],
-                ["photos_without_approval", "Photos, voice or likeness without approval"],
-                ["identity_clues", "Identity clues that reveal more than intended"],
-                ["health_family_money", "Health, family, money or legal vulnerability"],
-                ["sensitive_ai_inference", "Sensitive AI inference or ranking"]
+                ["public_title", "Public title"],
+                ["general_values", "General values or interests"],
+                ["connection_type", "Connection type"],
+                ["broad_location", "Broad location or distance comfort"],
+                ["pace", "Preferred pace"],
+                ["response_prompt", "Response prompt"],
+                ["boundary_summary", "Boundary summary"],
+                ["trusted_intro_only", "Trusted-introduction note only"]
               ]
             },
-            { type: "textarea", name: "approval_path", label: "Who checks the public words before they appear?", hint: "A host, organiser, person named, trusted helper, carer, clinician, artist, committee, or community contact." },
-            { type: "textarea", name: "open_questions", label: "What questions must be answered before public sharing?", hint: "Anything that would reduce anxiety, clarify consent, remove pressure, protect identity or make the invitation kinder." }
+            {
+              type: "select",
+              name: "commons_visibility",
+              label: "How visible should this bridge be?",
+              options: [
+                ["private_draft", "Private draft only"],
+                ["trusted_helper", "Trusted helper only"],
+                ["commons_host", "Commons host or steward"],
+                ["matched_people", "Matched people only"],
+                ["community_visible", "Community visible"],
+                ["public_web", "Public web"]
+              ]
+            },
+            { type: "textarea", name: "private_by_default", label: "What must stay private by default?", hint: "Names, exact location, diagnosis, family history, attraction, body details, money, conflict, contact details, anything still uncertain, or anything not explicitly selected." },
+            { type: "textarea", name: "permission_check", label: "When should permission be checked again?", hint: "Before matching, before an introduction, before AI summarises, before public posting, after time passes, when feelings change, or whenever someone asks for more detail." }
+          ]
+        },
+        {
+          title: "First Contact Comfort",
+          fields: [
+            { type: "textarea", name: "welcome_responses", label: "What kinds of responses would feel welcome?", hint: "A short hello, a shared interest, a gentle question, an invitation, a story, a practical offer, a slower conversation, or a trusted introduction." },
+            { type: "textarea", name: "not_welcome", label: "What would raise anxiety or feel like pressure?", hint: "Demands, sexualised assumptions, instant intimacy, diagnosis talk, advice, interrogation, public tagging, urgency, sales energy, or asking for private details too soon." },
+            { type: "textarea", name: "first_step_container", label: "What container would make first contact safer?", hint: "A commons message, moderated intro, public activity, group setting, slow email, voice note later, trusted helper, or another permission check before direct contact." }
+          ]
+        },
+        {
+          title: "Commons Stewardship",
+          fields: [
+            { type: "textarea", name: "bridge_steward", label: "Who may help steward this bridge, if anyone?", hint: "Self only, trusted helper, commons host, organiser, AI helper with explicit permission, or nobody until the wording feels clearer." },
+            { type: "textarea", name: "ai_or_host_limits", label: "What must hosts or AI helpers not infer?", hint: "Desire, availability, diagnosis, vulnerability, relationship status, identity, urgency, location, risk, compatibility, or permission to share more." },
+            { type: "textarea", name: "withdraw_or_update", label: "How can this bridge be changed, paused or withdrawn?", hint: "Who can edit it, how permission changes are recorded, when it expires, what should be deleted, and how people are told the bridge has changed." }
           ]
         }
       ]
@@ -497,7 +520,7 @@
       "",
       builder.intro,
       "",
-      "This Markdown file was generated locally in the browser. Treat it as a gentle question map and personal draft. Only selected parts should be shared through the commons, and only with the permissions named here.",
+      "This Markdown file was generated locally in the browser. Treat it as a self-reflection and selective-sharing draft. Only selected parts should be shared through the commons, and only with the permissions named here.",
       ""
     ];
 

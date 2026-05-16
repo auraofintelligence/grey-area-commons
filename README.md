@@ -17,7 +17,7 @@ It follows the existing local builder pattern:
 - `permissions.html` - sharing layers.
 - `higher-minds.html` - gentle AI support.
 - `clinical-pathway.html` - optional memory, love and intimacy self-reflection branch for family history of memory-related decline, consent, privacy and changing capacity.
-- `noticeboards.html` - public bridge after private context is protected.
+- `noticeboards.html` - selective public bridge for people seeking connection through the commons after self-reflection.
 - `export.html` - save Markdown pack.
 
 ## Privacy Model
